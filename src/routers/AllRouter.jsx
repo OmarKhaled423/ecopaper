@@ -31,20 +31,20 @@ const AllRouter = () => {
           <Route path="/" element={<App />}>
             <Route index path="/" element={<HomePage />} />
             <Route path="*" element={<NotFoundPage />} />
-            <Route path="contact-us" element={<ContactUsPage />} />
-            <Route path="about-us" element={<AboutUsPage />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="login" element={<Login />} />
-            <Route path="forgot-password" element={<ForgotPassword />} />
+            <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             {/* products routes */}
-            <Route path="products" element={<ProductsPage />} />
-            <Route path="writing-printing" element={<WitingPrinting />} />
-            <Route path="packaging-boards" element={<PackagingBoards />} />
-            <Route path="speciality-papers" element={<SpecialityPapers />} />
-            <Route path="tissues-papers" element={<TussuePapers />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/writing-printing" element={<WitingPrinting />} />
+            <Route path="/packaging-boards" element={<PackagingBoards />} />
+            <Route path="/speciality-papers" element={<SpecialityPapers />} />
+            <Route path="/tissues-papers" element={<TussuePapers />} />
 
             {/* admin routes */}
-            <Route path="admin" element={<AdminPage />}>
+            <Route path="/admin" element={<AdminPage />}>
               <Route index element={<UsersData />} />
               <Route path="users" element={<UsersData />} />
               <Route path="subscribers" element={<SubscribersData />} />
