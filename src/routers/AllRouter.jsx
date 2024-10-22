@@ -29,7 +29,7 @@ const AllRouter = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route index element={<HomePage />} />
+            <Route index path="/" element={<HomePage />} />
             <Route path="*" element={<NotFoundPage />} />
             <Route path="contact-us" element={<ContactUsPage />} />
             <Route path="about-us" element={<AboutUsPage />} />
