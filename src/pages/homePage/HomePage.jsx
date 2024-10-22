@@ -10,7 +10,6 @@ import AllProducts, {
   WritingPrintingPapers,
 } from "../../database/DataDB";
 
-
 import image1 from "../../assets/Slider_1.webp";
 import image2 from "../../assets/Slider_2.jpg";
 import image3 from "../../assets/Slider_3.jpg";
@@ -20,12 +19,11 @@ import image6 from "../../assets/Slider_6.png";
 import SingleDisplayCard from "../../components/productsCards/SingleDisplayCard";
 import { useState } from "react";
 import SliderHome from "./SliderHome";
+import AppHeader from "../../components/header/AppHeader";
+import AppFooter from "../../components/footer/AppFooter";
 
 const HomePage = () => {
   document.title = "Homepage | Ecopaper Recycle Company";
-
-
-
 
   const SilderImages = [
     { id: 1, src: image1, caption: "Packaging Board Paper" },
@@ -62,35 +60,18 @@ const HomePage = () => {
   return (
     <div className="homepage_body">
       {/* App Header component */}
-      {/* <AppHeader /> */}
+      <AppHeader/>
 
-      {/* <h1>Home page</h1> */}
       {/* App Slider component*/}
       <SliderCustom images={SilderImages} />
-
       <div className="wrapper">
         <h2>See our product list</h2>
         <ProductCard AllProductsData={AllProducts} className="product__card" />
       </div>
       <div className="wrapper">
         <h2>Product list</h2>
-        {/* <div>
-          <button
-            style={{ paddingInline: "10px", paddingBlock: "5px" }}
-            onClick={nextSideHandler}
-          >
-            Previous
-          </button>
-
-          <button
-            style={{ paddingInline: "10px", paddingBlock: "5px" }}
-            onClick={nextSideHandler}
-          >
-            Next
-          </button>
-        </div> */}
         <div className="products__slider">
-          <SliderHome data={data}/>
+          <SliderHome data={data} />
         </div>
       </div>
 
@@ -109,7 +90,7 @@ const HomePage = () => {
         </p>
       </div>
       {/* App Footer component*/}
-      {/* <AppFooter /> */}
+      <AppFooter />
     </div>
   );
 };

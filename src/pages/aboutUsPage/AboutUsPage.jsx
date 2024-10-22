@@ -6,6 +6,7 @@ const AboutUsPage = () => {
   document.title = "About Us | Hafeez Uddin Tizarah & Trade Company";
   return (
     <>
+      <AppHeader />
       <div className="hero-section about-page">
         <div className="hero-container">
           <h2>Know About Us Who we are</h2>
@@ -34,15 +35,31 @@ const AboutUsPage = () => {
       <div className="paragraph-wrapper">
         <h3>What we do for our partners?</h3>
         <ul>
-          <li>We use our rich experience of 12 years in the paper industry and share it with our partners to solve their problems.</li>
-          <li>We assist our partners in sourcing all kinds of paper products from different mills worldwide according to their needs.</li>
-          <li>We fulfill the requirements of various sizes and weights with private label.</li>
+          <li>
+            We use our rich experience of 12 years in the paper industry and
+            share it with our partners to solve their problems.
+          </li>
+          <li>
+            We assist our partners in sourcing all kinds of paper products from
+            different mills worldwide according to their needs.
+          </li>
+          <li>
+            We fulfill the requirements of various sizes and weights with
+            private label.
+          </li>
           <li>We are very flexible regarding our partners requirements.</li>
-          <li>Our strength is our knowledge to find the best quality products which we delivers to our partners which are best for them.</li>
+          <li>
+            Our strength is our knowledge to find the best quality products
+            which we delivers to our partners which are best for them.
+          </li>
         </ul>
 
-        <p>Till now we have successfully created 53 partners in 7 different countries in a really short period of time and still counting…</p>
+        <p>
+          Till now we have successfully created 53 partners in 7 different
+          countries in a really short period of time and still counting…
+        </p>
       </div>
+      <AppFooter />
     </>
   );
 };

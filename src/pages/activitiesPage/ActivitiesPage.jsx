@@ -7,6 +7,7 @@ const PhotoGalaryPage = () => {
       <Marquee />
       <AppHeader />
       <h1> Activities Page</h1>
+      
     </>
   );
 };

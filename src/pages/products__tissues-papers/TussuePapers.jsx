@@ -1,10 +1,14 @@
 import { TissuePapers } from "../../database/DataDB";
 import SingleDisplayCard from "../../components/productsCards/SingleDisplayCard"
+import AppHeader from "../../components/header/AppHeader";
+import AppFooter from "../../components/footer/AppFooter";
+
 const TussuePapers = () => {
   document.title = "Tissue Papers | Ecopaper Recycle Company";
 
   return (
     <>
+    <AppHeader />
       <div className="hero-section tissue-paper-page">
         <div className="hero-container">
           <h2>Tissues Papers</h2>
@@ -19,6 +23,7 @@ const TussuePapers = () => {
           />
         ))}
       </div>
+      <AppFooter />
     </> 
   );
 };

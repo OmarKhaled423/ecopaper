@@ -9,12 +9,21 @@ const ContactUsPage = () => {
 
   return (
     <>
+      <AppHeader />
       <div className="hero-section contact-page">
         <div className="hero-container">
           <h2>Contact with Us</h2>
           <p>
             For all urgent queries contact our Client Support Executive via
-            <span style={{color:"var(--third-color)",fontWeight:500}}> Whatsapp </span>on their direct numbers. All queries are answered within <span style={{color:"var(--fourth-color)",fontWeight:500}}> 24 </span>
+            <span style={{ color: "var(--third-color)", fontWeight: 500 }}>
+              {" "}
+              Whatsapp{" "}
+            </span>
+            on their direct numbers. All queries are answered within{" "}
+            <span style={{ color: "var(--fourth-color)", fontWeight: 500 }}>
+              {" "}
+              24{" "}
+            </span>
             hours during work days.
           </p>
         </div>
@@ -22,7 +31,13 @@ const ContactUsPage = () => {
       <div className="contact-info-container">
         <div className="contact-information">
           <h4>Address & Location</h4>
-          <p style={{ marginBlock: "0.6rem", fontWeight: "600",fontSize:"18px" }}>
+          <p
+            style={{
+              marginBlock: "0.6rem",
+              fontWeight: "600",
+              fontSize: "18px",
+            }}
+          >
             Ecopaper Recycle Company
           </p>
           <p>10 Shahid Nazrul Islam Sharak,</p>
@@ -92,6 +107,7 @@ const ContactUsPage = () => {
           ></iframe>
         </div>
       </div>
+      <AppFooter />
     </>
   );
 };

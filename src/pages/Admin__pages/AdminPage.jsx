@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { createContext } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import AppHeader from "../../components/header/AppHeader";
+import AppFooter from "../../components/footer/AppFooter";
 export const UserContext = createContext();
 
 const AdminPage = () => {
@@ -84,71 +86,83 @@ const AdminPage = () => {
 
   // console.log(ProductData);
   return (
-    <div
-      style={{
-        minHeight: "70vh",
-        background: "#ffffff",
-        paddingInline: "2rem",
-        paddingBlock: "10px",
-      }}
-    >
+    <>
+      <AppHeader />
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          minHeight: "70vh",
+          background: "#ffffff",
+          paddingInline: "2rem",
+          paddingBlock: "10px",
         }}
       >
-        <nav style={{ paddingBlock: "1rem" }}>
-          <NavLink
-            style={({ isActive }) => (isActive ? IsActiveStyle : InActiveStyle)}
-            to="users"
-          >
-            <span className="">Users Data</span>
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => (isActive ? IsActiveStyle : InActiveStyle)}
-            to="subscribers"
-          >
-            <span className="">Subsciber</span>
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => (isActive ? IsActiveStyle : InActiveStyle)}
-            to="products"
-          >
-            <span className="">Products</span>
-          </NavLink>
-          <NavLink
-            style={({ isActive }) => (isActive ? IsActiveStyle : InActiveStyle)}
-            to="orders"
-          >
-            <span className="">Orders</span>
-          </NavLink>
-        </nav>
-        <div>
-          <span
-            onClick={() => {
-              location.reload();
-            }}
-            style={IsActiveStyle}
-          >
-            Refresh Page
-          </span>
-        </div>
-      </div>
-
-      <div>
-        <UserContext.Provider
-          value={{
-            user: [UserData, LoadingUserData],
-            product: [ProductData, LoadingProductData],
-            cart: [CartData, LoadingCartData],
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
-          <Outlet />
-        </UserContext.Provider>
+          <nav style={{ paddingBlock: "1rem" }}>
+            <NavLink
+              style={({ isActive }) =>
+                isActive ? IsActiveStyle : InActiveStyle
+              }
+              to="users"
+            >
+              <span className="">Users Data</span>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) =>
+                isActive ? IsActiveStyle : InActiveStyle
+              }
+              to="subscribers"
+            >
+              <span className="">Subsciber</span>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) =>
+                isActive ? IsActiveStyle : InActiveStyle
+              }
+              to="products"
+            >
+              <span className="">Products</span>
+            </NavLink>
+            <NavLink
+              style={({ isActive }) =>
+                isActive ? IsActiveStyle : InActiveStyle
+              }
+              to="orders"
+            >
+              <span className="">Orders</span>
+            </NavLink>
+          </nav>
+          <div>
+            <span
+              onClick={() => {
+                location.reload();
+              }}
+              style={IsActiveStyle}
+            >
+              Refresh Page
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <UserContext.Provider
+            value={{
+              user: [UserData, LoadingUserData],
+              product: [ProductData, LoadingProductData],
+              cart: [CartData, LoadingCartData],
+            }}
+          >
+            <Outlet />
+          </UserContext.Provider>
+        </div>
       </div>
-    </div>
+      <AppFooter />
+    </>
   );
 };
 

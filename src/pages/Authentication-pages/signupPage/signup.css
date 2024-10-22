@@ -1,9 +1,12 @@
 .container {
-  min-height: 50vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #9db9b9;
+  text-align: center;
   align-content: canter;
   padding-block: 2rem;
+  margin-block: auto;
+  
 }
 
 .card {
