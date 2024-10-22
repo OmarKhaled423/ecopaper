@@ -29,7 +29,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/ecopaper/" element={<HomePage />} />
-          <Route path="*" element={<NotFoundPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/signup" element={<Signup />} />
@@ -50,6 +49,7 @@ function App() {
             <Route path="products" element={<ProductsData />} />
             <Route path="orders" element={<Orders />} />
           </Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </Fragment>
