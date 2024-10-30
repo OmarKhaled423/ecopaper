@@ -20,8 +20,9 @@ import Orders from "./pages/Admin-All-Pages/Orders";
 
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProductsParent from "./pages/productsParentPage/ProductsParent";
+
 import ProductsPage from "./pages/productsPage/ProductsPage";
+import ProductsPageLayout from "./pages/productsPageLayout/ProductsPageLayout";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           {/* products routes */}
+
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/writing-printing" element={<WitingPrinting />} />
           <Route path="/packaging-boards" element={<PackagingBoards />} />

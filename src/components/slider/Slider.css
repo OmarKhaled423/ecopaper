@@ -4,7 +4,7 @@
   &:is(:hover) {
     .arrow-button__container {
       opacity: 1;
-      
+
       .left__arrow-button,
       .right__arrow-button {
         transform: scale(1);
@@ -152,7 +152,7 @@
 
   @media only screen and (max-width: 768px) {
     .slider {
-      min-height: 350px;
+      min-height: 300px;
     }
 
     .dot {
@@ -164,27 +164,31 @@
     }
   }
 }
-  @media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
+  .slider_container {
     .slider {
       min-height: 250px;
     }
- 
 
     .dot {
       --dot-size: 10px;
     }
+
     .image-caption {
-      font-size: 1.2rem;
+      font-size: 1.250rem;
       padding: 0.8rem 0rem;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     .arrow-button__container {
+      padding-inline: 1.4rem;
       .left__arrow-button,
       .right__arrow-button {
-        --arrow-btn-size: 25px;
+        --arrow-btn-size: 32px;
         font-weight: 400;
       }
     }
   }
+}
+
 

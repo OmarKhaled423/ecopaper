@@ -474,7 +474,7 @@
   }
   .menu__bar {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.150rem;
   }
   .header__nav.show {
     display: flex;
@@ -518,7 +518,7 @@
   }
   .menu__bar {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .header__nav.show {
     display: flex;

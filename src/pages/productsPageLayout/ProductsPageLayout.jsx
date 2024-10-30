@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-const ProductsParent = () => {
+const ProductsPageLayout = () => {
   document.title = "Products | Ecopaper Recycle Company";
 
   return (
@@ -10,4 +10,4 @@ const ProductsParent = () => {
   );
 };
 
-export default ProductsParent;
+export default ProductsPageLayout;
