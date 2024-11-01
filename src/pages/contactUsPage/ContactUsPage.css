@@ -89,7 +89,7 @@
 }
 .map-iframe-box {
   width: 100%;
-  height: 28rem;
+  aspect-ratio: 4/3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -118,6 +118,9 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .contact-info-container {
+    margin-top: 0rem;
+  }
   .map-wrapper {
     padding: 1rem;
     width: 100%;
@@ -125,5 +128,18 @@
 
   .contact-information {
     padding-inline: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .map-wrapper {
+    padding: 1rem 0.8rem;
+    width: 100%;
+  }
+  .contact-info-container {
+    padding-inline: 0rem;
+    .contact-information {
+      padding-inline: 1.3rem;
+    }
   }
 }

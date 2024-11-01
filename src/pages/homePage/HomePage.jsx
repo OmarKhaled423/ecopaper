@@ -28,10 +28,10 @@ const HomePage = () => {
   const SilderImages = [
     { id: 1, src: image1, caption: "Packaging Board Paper" },
     { id: 2, src: image2, caption: "Colourful Packaging Board Papers" },
-    { id: 3, src: image3, caption: "Board Paper" },
+    { id: 3, src: image3, caption: "Writing Paper Role" },
     { id: 4, src: image4, caption: "Board Paper Role" },
     { id: 5, src: image5, caption: "Packaging Board Paper" },
-    { id: 6, src: image6, caption: "Packaging Board Paper" },
+    { id: 6, src: image6, caption: "Poster Paper" },
   ];
 
   const data = [

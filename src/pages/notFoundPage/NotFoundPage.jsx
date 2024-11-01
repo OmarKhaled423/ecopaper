@@ -19,7 +19,7 @@ const PhotoGalaryPage = () => {
           exist...!
         </p>
         <br />
-        <nav>
+        <nav className={styleSheet.nav_links}>
           <Link to="/">
             <button className={styleSheet.btn}>Back to Home</button>
           </Link>

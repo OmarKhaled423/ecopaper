@@ -127,7 +127,7 @@ const AppHeader = () => {
                 ? "active-item header__nav-item"
                 : "none-color header__nav-item"
             }
-            to="/ecopaper/"
+            to="/"
           >
             <span className="nav-text">Home </span>
           </NavLink>
