@@ -20,7 +20,7 @@ const PhotoGalaryPage = () => {
         </p>
         <br />
         <nav className={styleSheet.nav_links}>
-          <Link to="/">
+          <Link to="/ecopaper/">
             <button className={styleSheet.btn}>Back to Home</button>
           </Link>
           <a href="mailto:refat3232@gmail.com">

@@ -29,7 +29,7 @@ function App() {
     <Fragment>
       <BrowserRouter>
         <Routes>
-          <Route index path="/" element={<HomePage />} />
+          <Route index path="/ecopaper/" element={<HomePage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/signup" element={<Signup />} />

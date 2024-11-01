@@ -93,7 +93,7 @@ const AppHeader = () => {
       {/* Main header Element */}
       <header className="header">
         {/* logo image section */}
-        <Link to="/">
+        <Link to="/ecopaper/">
           <Logo />
         </Link>
 
@@ -127,7 +127,7 @@ const AppHeader = () => {
                 ? "active-item header__nav-item"
                 : "none-color header__nav-item"
             }
-            to="/"
+            to="/ecopaper/"
           >
             <span className="nav-text">Home </span>
           </NavLink>
